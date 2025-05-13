@@ -48,6 +48,10 @@
 
 ### /usr file system contains executable files that can be shared among machines and user utilities.
 
+* Run `tree -L1` to view some of the root directory contents we talked about. The _L1_ flag means show level 1
+
+![tree](./img/tree-l1.png)
+
 * Run `sudo cd /` to switch to root dir. Them run `pwd` to you are in the root directory.
 
 ![pwd-root](./img/pwd-root.png)
@@ -64,5 +68,27 @@
 
 ![kop](./img/ls-la-root2.png)
 
-### The difference is that _ls -la_ is flaged with a _-l_  (detailed listing) and _-a_ (show all files, including hidden ones). This is the reason why total is now 84 as compaired to 76 from the previous command.
+### The difference is that _ls -la_ is flaged with a _-l_  (detailed listing) and _-a_ (show all files, including hidden ones). This is the reason why total is now 84 as compaired to total 76 from the previous command.
+
+### Let us explore some other commands and directories.
+
+* Run `sudo cd /usr` to change working directory to usr.
+
+![usr](./img/cd-usr.png)
+
+### Make a child directory named photos inside usr
+
+* Run `mkdir photos`
+
+### Permission denied because we ommited the super user do prefix
+
+* Run `sudo mkdir photos`
+* Run `cd photos`
+* Run `sudo mkdir photo1 photo2 photo3`
+
+![mkdir](./img/usr-photos.png)
+
+* Rus `ls` to verify the folders created in the last command
+
+![](./img/show-photos.png)
 
