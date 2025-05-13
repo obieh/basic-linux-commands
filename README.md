@@ -33,8 +33,9 @@
 
 ### Print Working Directory *'pwd'* command. This  writes the full pathname of the current working directory to the standard output.
 
-* On the terminal run `pwd`
-![pwd](./img/pwd.png)
+* On the terminal run `pwd` switch to /home/ubuntu `cd /home/ubuntu` run `pwd` again to see that you have moved from root to home/ubuntu which is your username.
+
+![pwd](./img/home-ubuntu.png)
 
 ### The root *("/")* directory is the first or top-most directory in a hierarchy
 
@@ -72,6 +73,8 @@
 
 ### Let us explore some other commands and directories.
 
+
+
 * Run `sudo cd /usr` to change working directory to usr.
 
 ![usr](./img/cd-usr.png)
@@ -88,7 +91,94 @@
 
 ![mkdir](./img/usr-photos.png)
 
-* Rus `ls` to verify the folders created in the last command
+* Run `ls` to verify the folders created in the last command
 
 ![](./img/show-photos.png)
 
+### Navifgate to first sub-directory in photos directory
+
+* Run `cd photo1` and `pwd` to verify the working directory
+
+![photo1pwd](./img/show-photo1.png)
+
+### Navifgate to second sub-directory in photos directory
+
+* Run `cd ..` to back one step into photos directory then run `cd photo2` and `pwd` to verify the working directory.
+
+![](./img/show-photo2.png)
+
+### Navifgate to third sub-directory in photos directory
+
+* Run `cd ..` to back one step into photos directory then run `cd photo3` and `pwd` to verify the working directory.
+
+![](./img/show-photo3.png)
+
+### _ls_ command.
+### The ls command is used to display the files and directories or path in the terminal. The _ls_ command has options that allow users to customize the output.
+
+* Run `ls /home/ubuntu/Documents` to list all files and folders in the Documents directory.
+
+![list-doc](./img/ls-documents.png)
+
+### Some options or flags for _ls_ command includes:
+* Run `ls -R` to list all files in the sub folder.
+
+![](./img/ls-R.png)
+
+### ls -R lists all the files in the subdirectories.
+* Run `ls -R` to show all files, hidden files inclusive.
+
+![](./img/ls-a.png)
+
+### ls -lh shows the file sizes in easily readable formats, such as MB, GB, and TB.
+
+* Run `ls -lh` to show file sizes in human readable format.
+
+![](./img/ls-lh.png)
+
+
+### Cat Command
+
+### The cat command in Linux is more than just a simple tool, it’s a versatile companion for various file-related operations, allowing users to view, concatenate, create, copy, merge, and manipulate file contents.
+
+* Run `sudo cat /etc/os-release` to view the OS details
+
+![](./img/cat-os-release.png)
+
+### Add content to a file using `echo` command so we can `cat` to see the contents
+
+* Run `echo 'coping my files' > text1.txt` This will write the sentence in single quote into a file named text1.txt. If this file does not exist, it will be created.
+
+
+![](./img/copy1file-to-another-.png)
+
+
+### cp Command
+### The `cp` command is an essential tool which is used for copying files or groups of files and directories.
+
+
+
+* Run `cp file2.txt /home/ubuntu/Documents` to copy the file.
+
+* Run `ls /home/ubuntu/Documents` to verify the _cp_ command.
+
+![](./img/copy-list-file.png)
+
+### To copy multiple files at once.
+
+* Run `cp text1.txt text2.txt text3.txt /home/ubuntu/Documents` Then list the directory to confirm.
+
+![](./img/multiplt-copy-list-file.png)
+
+
+### Copy contents of one file to another
+
+* Run `cp text1.txt text4.txt` to copy the contents of text1.txt to text4.txt. Run `cat text4.txt` to verify the cp command.
+
+![](./img/copy1-to-another.png)
+
+### To copy entire directory, run the _cp_ command with a _-R_ flag
+
+* Run `cp -R /home/ubuntu/Documents /home/ubuntu/Documents_backup`
+
+![](./img/cp-R.png)
