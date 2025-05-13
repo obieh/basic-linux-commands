@@ -41,7 +41,19 @@
 
 ### /bin contains user command binaries for all users both the sysadmin and other users and has no sub directories. Binaries contained in /bin include commands like ls, cp, mv, mkdir, rm etc. 
 
+* Run `ls /bin` to list the bin directory
+
+![](./img/ls-bin.png)
+
+* Run `cd /bin` to switch to bin directory
+![](./img/cd-bin.png)
+
+
 ### /etc directory is a special folder in Linux that holds system-wide configuration files. These files tell your system how to behave, from setting up your network to managing user accounts. 
+* Run `ls /etc` to list etc directory contents
+
+![](./img/ls-etc.png)
+
 
 ### /home directory is a directory that is assigned to each user account on a Linux system. It is the directory where a user's personal files and settings are stored.
 
@@ -182,3 +194,54 @@
 * Run `cp -R /home/ubuntu/Documents /home/ubuntu/Documents_backup`
 
 ![](./img/cp-R.png)
+
+### `mv` command, primarily used to movr snd rename files and directories.
+
+* Run `mv file3.txt /home/ubuntu/Documents` This command moves file3.txt to user Document directory, in this case 'ubuntu'. List the directory to very the file has been moved.
+
+![](./img/mv-file.png)
+
+
+### We can also use the _mv_ command to rename a file.
+
+* Run `mv file2.txt newfile2.txt`, list the directory to confirm.
+
+![](./img/rename-file.png)
+
+### `rm` command is used to delete files within a directories.
+
+* Run `rm newfile2.txt` to delete newfile2.txt, then list the directory to confirm newfile2.txt delete.
+
+![](./img/rm-single-file.png)
+
+### We also delete multiple files with the _rm_ command.
+
+* run `rm text2.txt text3.txt text4.txt` to delete all three files at once.
+
+![](./img/rm-multiple-file.png)
+
+### There are options(flags) that you can use with the _rm_ command
+
+* rm -i will prompt you to confirm before deleting the file. Run `rm -i /home/ubuntu/Documents/file2.txt` then type _yes_ to complete the **delete** operation
+
+![](./img/rm-i.png)
+
+* rm -f will delete a file without asking for confirmation. the _-f_ flag means _force_. Run `rm -f /home/ubuntu/Documents/file3.txt` to delete file3.txt.
+
+![](./img/rm-f.png)
+
+* rm -r will recursively delete a directory and all its contents (normally rm will not delete directories). Run `rm -r project` to delete the project directory.
+
+![](./img/rm-r.png)
+
+### Touch command enables users to create an empty file.
+
+* Run `touch /home/ubuntu/Documents/web.html`
+
+![](./img/touch-web.png)
+
+### Find command is used to search for files within specified directory.
+
+* Run `find /home -name web.html` to find a file named web.html in the home directory.
+
+![](./img/find-file.png)
