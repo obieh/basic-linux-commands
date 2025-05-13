@@ -17,19 +17,19 @@
 
 ![mkdir](./img/mkdir-denied.png)
 
-### The *_mkdir_* command returned permision denied. This is because the operation is to carried out on the root folder and requires a super user. Super user do *'sudo'* has to prefix the command. This elevates the current user account to have root privileges.
+### The *_mkdir_* command returned permision denied. This is because the operation is to carried out on the root directory and requires a super user. Super user do *'sudo'* has to prefix the command. This elevates the current user account to have root privileges.
 
 * Run `sudo mkdir /root/example`
 
 ![sudo-mkdir](./img/sudo-mkdir.png)
 
-### To verify that the folder has the created,we use the **_ls_** to view folder content
+### To verify that the directory has the created,we use the **_ls_** to view directory content
 
 * Run `sudo ls /root`
 
 ![](./img/sudo-ls.png)
 
-### Example folder was created as desired as shown above.
+### Example directory was created as desired as shown above.
 
 ### Print Working Directory *'pwd'* command. This  writes the full pathname of the current working directory to the standard output.
 
@@ -49,17 +49,33 @@
 ![](./img/cd-bin.png)
 
 
-### /etc directory is a special folder in Linux that holds system-wide configuration files. These files tell your system how to behave, from setting up your network to managing user accounts. 
+### /etc directory is a special directory in Linux that holds system-wide configuration files. These files tell your system how to behave, from setting up your network to managing user accounts. 
 * Run `ls /etc` to list etc directory contents
 
 ![](./img/ls-etc.png)
 
+* Run `cat /etc/apt/sources.list` to view content of a file named sources.list residing in the apt directory which is a subdirectory it etc directory
+
+![](./img/cat-etc-sources.png)
 
 ### /home directory is a directory that is assigned to each user account on a Linux system. It is the directory where a user's personal files and settings are stored.
 
+* Check our current directory and switch to home directory if not already
+* Run `pwd` if not in home directory then run `cd /home/ubuntu` ubuntu here is the username.
+
+![](./img/home-ubuntu.png)
+
 ### /var is a standard directory that stands for "variable files". As the name suggests, this directory contains data that changes frequently while the system is running.
 
+* Run `ls /var` to list contents. Go further to view content of backups directory inside var directory. Run `ls /var/backups`
+
+![](./img/ls-var-backup.png)
+
 ### /usr file system contains executable files that can be shared among machines and user utilities.
+
+* Run `ls /usr` to list contents of usr directory.
+
+![](./img/all-ls-usr.png)
 
 * Run `tree -L1` to view some of the root directory contents we talked about. The _L1_ flag means show level 1
 
