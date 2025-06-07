@@ -261,3 +261,5 @@
 * Run `find /home -name web.html` to find a file named web.html in the home directory.
 
 ![](./img/find-file.png)
+
+## Hope you followed through and this have been informative for you.
