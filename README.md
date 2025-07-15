@@ -1,5 +1,5 @@
 # Basic-Linux-Commands
-## This project Demonstrates Baslic Linux Commands
+## This project Demonstrates Baslic Linux Commands.
 
 ### Linux commands are utilities of the Linux OS. All tasks in Linux can be accomplished by executing commands through the Linux terminal. Let's connect to the EC2 instance.
 
